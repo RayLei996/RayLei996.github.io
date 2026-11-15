@@ -150,16 +150,6 @@ h1 span {
 
 .hero-actions { display: flex; flex-wrap: wrap; gap: 11px; margin-top: 28px; }
 
-.hero-email {
-  display: inline-block;
-  margin-top: 18px;
-  color: var(--muted);
-  font-weight: 600;
-  text-underline-offset: .2em;
-}
-
-.hero-email:hover { color: var(--accent); }
-
 .button {
   display: inline-flex;
   min-height: 48px;
@@ -173,6 +163,15 @@ h1 span {
   font-weight: 700;
   text-decoration: none;
 }
+
+button.button {
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.button[hidden] { display: none; }
 
 .button.primary { border-color: var(--dark); background: var(--dark); color: #fff; }
 .button.primary:hover { border-color: var(--accent); background: var(--accent); }
